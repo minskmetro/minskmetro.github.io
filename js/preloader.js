@@ -5,16 +5,18 @@ function closePreloader() {
     preloader.style.visibility = 'hidden';
     closeBtn.style.opacity = '0';
     closeBtn.style.visibility = 'hidden';
-}
+    clearInterval(timerId);
+};
 
-
-setInterval(function() {
+var timerId = setInterval(function() {
     var h1 = document.getElementsByTagName('h1')[0];
-    var dot = '.'
-    if (h1.innerHTML.length == 15){
+    var dot = '.';
+    if (h1.innerHTML.length == 15) {
         h1.innerHTML = 'В разработке';
     }
-    else{
-        h1.innerHTML = h1.innerHTML + dot
+    else {
+        h1.innerHTML = h1.innerHTML + dot;
     }
 }, 1000);
+
+
