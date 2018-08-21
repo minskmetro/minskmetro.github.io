@@ -5,10 +5,12 @@ body{
     outline: 0;
     font-family: sans-serif;
     background: #e3e3e3;
+    height: 3000px;
 }
 ul{
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 li{
     display: inline;
@@ -16,5 +18,8 @@ li{
 a{
     color: #000;
     text-decoration: none;
+}
+.lato_numbers{
+    font-family: Lato;
 }
 /*————————————————————*/

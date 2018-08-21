@@ -1,3 +1,4 @@
+/*секция хидера на 100% ширины*/
 .header_top_section{
     width: 100%;
     position: fixed;
@@ -5,6 +6,7 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);
     z-index: 50;
 }
+/*сам хидер на 1020px*/
 .header_top{
     width: 1020px;
     margin: 0 auto;
@@ -12,27 +14,37 @@
     justify-content: space-between;
     align-items: center;
 }
+/*первая секция с лого и номером телефона*/
 .logo_info_section{
     display: flex;
     align-items: center;
 }
+/*список первой секции*/
 .logo_info{
     display: inline-flex;
     align-items: center;
     padding: 0;
 }
+/*ссылка логотипа*/
 .logo_link{
     display: flex;
     margin: 20px 10px 20px 20px;
 }
+/*блок горячей линии*/
 .hotline{
     margin: 0 20px 0 0;
 }
+/*номер горячей линии*/
 .hotline_number{
     font-size: 14px;
     font-family: Lato;
     color: #eb0602;
 }
+/*номер горячей линии при наведении*/
+.hotline_number:hover{
+    text-decoration: underline;
+}
+/*подпись (горячая линия)*/
 .hotline_text{
     padding: 0;
     margin: 0;
@@ -42,16 +54,26 @@
     color: #eb0602;
     font-weight: 300;
 }
+/*ссылка и иконка на твитер*/
 .twitter_link{
-    margin: 0 20px 0 0;
+    margin: 0 14px 0 0;
     display: flex;
 }
+/*ссылка на англ версию сайта*/
 .eng_link{
     font-family: "Open Sans";
     font-size: 12px;
     color: #eb0602;
+    display: flex;
+    padding: 6px;
+    transition: .3s;
 }
-
+/*ссылка на англ версию сайта при наведении*/
+.eng_link:hover{
+    color: #fff;
+    background: #eb0602;
+}
+/*вторая секция навигации*/
 .navigation_section{
     display: flex;
     margin: 0 15px 0 0;
@@ -60,30 +82,155 @@
     font-weight: 300;
 
 }
-
+/*сама секция навигации*/
 .navigation{
     display: inline-flex;
     height: 100px;
 }
+/*пункты навигации*/
 .navigation>li{
     display: inline-flex;
     align-items: center;
-    padding: 10px 10px 0 10px;
+    padding: 5px 10px 0 10px;
     margin: 0 5px;
     transition: .3s;
-    border-bottom: 10px solid #fff;
+    border-bottom: 5px solid #fff;
     box-sizing: ;
 }
+/*пункты навигации при наведении*/
 .navigation li:hover{
-    border-bottom: 10px solid #eb0602;
+    border-bottom: 5px solid #eb0602;
 }
+/*ссылки в навигации при наведении*/
 .navigation li:hover a{
+    color: #eb0602;
+}
+/*спойлерный блок*/
+#navigation_spoilers{
+    width: 100%;
+    z-index: 60;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+}
+/*спойлерная секция*/
+.navigation_spoilers_section{
+    width: 1020px;
+    display: flex;
+}
+/*общий css для спойлеров*/
+.information_spoiler_all_css{
+    visibility: hidden;
+    position: relative;
+    background: #fff;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);
+    height: fit-content;
+    display: none;
+}
+/*первый сполер*/
+#information_spoiler_st{
+    /*visibility: hidden;*/
+    /*position: relative;*/
+    left: 426px;
+    width: 220px;
+    height: auto;
+    /*background: #fff;*/
+}
+/*второй спойлер*/
+#information_spoiler_nd{
+    /*visibility: hidden;*/
+    /*position: relative;*/
+    left: 529px;
+    width: 220px;
+    /*height: auto;*/
+    /*background: #fff;*/
+}
+/*третий спойлер*/
+#information_spoiler_rd{
+    /*visibility: hidden;*/
+    /*position: relative;*/
+    left: 634px;
+    width: 220px;
+    /*height: 200px;*/
+    /*background: #fff;*/
+}
+/*четвертый спойлер*/
+#information_spoiler_th{
+    /*visibility: hidden;*/
+    /*position: relative;*/
+    left: 780px;
+    width: 220px;
+    /*height: 200px;*/
+    /*background: #fff;*/
+}
+/*ссылки в спойлере*/
+.spoiler_links{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 8px 0;
+    font-family: "Open Sans";
+
+}
+/*отступы элементов спойлеров*/
+.spoiler_links li {
+    margin: 6px 0 6px 20px;
+}
+/*цвет ссылок спойлеров при наведении*/
+.spoiler_links li a:hover{
     color: #eb0602;
 }
 
 
+.header_bottom_section{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
 
+#img_slider{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1020px;
+    margin: 0 auto;
+    background-image: url("../../imgs/1sliderpic.png");
+    transition: 1s;
+}
 
+.main_text_h1{
+    font-family: "Open Sans";
+    font-size: 45px;
+    color: #fff;
+    font-weight: 500;
+    margin: 135px 0 0 0;
+}
+
+.slider_btns ul{
+    display: flex;
+    justify-content: center;
+}
+
+.slider_btns ul li a{
+    display: flex;
+    justify-content: center;
+    color: #eb0602;
+    width: 240px;
+    font-family: Rubik;
+    background: #fff;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 15px 0;
+    margin: 80px 50px 190px 50px;
+    transition: .3s;
+}
+.slider_btns ul li a:hover{
+    color: #fff;
+    background: #eb0602;
+}
 
 
 
