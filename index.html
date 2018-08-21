@@ -1,23 +1,92 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Минский метрополитен</title>
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="css/pages_css/main_page.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto:300,400|Rubik:300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-    <div id="preloader">
-        <div id="loading"></div>
-        <h1>В разработке</h1>
+
+    <div id="preloader"></div>
+    <div id="side_menu"></div>
+
+
+
+    <div id="main_content">
+
+        <div id="header">
+
+            <div class="header_top_section">
+                <div class="header_top">
+                    
+                    <div class="logo_info_section">
+                        <ul class="logo_info">
+                            <li>
+                                <a href="index.html" class="logo_link">
+                                    <img src="imgs/logo.png" alt="logo" class="logo">
+                                </a>
+                            </li>
+
+                            <li class="hotline">
+                                <a href="tel:+375 17 219-52-09" class="hotline_number">+375 17 219-52-09</a>
+                                <p class="hotline_text">(горячая линия)</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="twitter_link">
+                                    <img src="imgs/twitter_icon.png" alt="twitter_icon">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="eng_link">ENG</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="navigation_section">
+                        <ul class="navigation">
+                            <li><a href="#">Информация</a></li>
+                            <li><a href="#">Схемы линий</a></li>
+                            <li><a href="#">Обращения граждан</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="header_bottom_section"></div>
+
+        </div>
+        
+        <div id="content">
+            <div class="create_way_section"></div>
+            <div class="interactive_map_section"></div>
+            <div class="tips_section"></div>
+            <div class="news_section"></div>
+        </div>
+
+        <div id="footer">
+            <div class="footer_top_section"></div>
+            <div class="footer_bottom_section"></div>
+        </div>
+
     </div>
 
-    <a id="closebtn" href="#" onclick="closePreloader()">&#10006;</a>
+
+
 
 
     <script src="js/preloader.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
