@@ -56,7 +56,71 @@ function test () {
         backgroundSlider.style.backgroundImage = 'url(imgs/1sliderpic.png)';
     }
 }
-setInterval(test, 10000)
+setInterval(test, 10000);
+//————————————————————
+
+
+
+// function showStartStations() {
+//     var stations = document.getElementsByClassName('station_add');
+//     var showStationsBtn = document.getElementsByClassName('search_first_station')[0];
+//
+//     if (stations[0].style.display != 'flex'){
+//         showStationsBtn.style.borderBottomLeftRadius = '0';
+//         showStationsBtn.style.borderBottomRightRadius = '0';
+//         showStationsBtn.style.background = '#f0f0f0';
+//
+//
+//         for (i = 0; i < stations.length; i++){
+//             stations[i].style.display = 'flex';
+//         }
+//     }
+//     else{
+//         showStationsBtn.style.borderBottomLeftRadius = '24px';
+//         showStationsBtn.style.borderBottomRightRadius = '24px';
+//         showStationsBtn.style.background = '#e4e4e4';
+//
+//         for (i = 0; i < stations.length; i++){
+//             stations[i].style.display = 'none';
+//         }
+//     }
+// }
+
+var options = {
+    valueNames: [ 'name', 'born' ]
+};
+var userList = new List('users', options);
+
+$('body').click(function (event) {
+    console.log(event.target);
+});
+
+var firstSearch = document.getElementsByClassName('search')[0];
+
+firstSearch.onfocus = function () {
+    var shownStations = document.getElementsByClassName('shown_stations')[0];
+
+    shownStations.style.display = 'block';
+};
+
+function closeFirstSearch () {
+    var shownStations = document.getElementsByClassName('shown_stations')[0];
+
+    shownStations.style.display = 'none';
+};
+
+function choosenStation() {
+    firstSearch.innerHTML = '1';
+    console.log(1);
+}
+
+
+
+
+
+
+
+
 
 
 

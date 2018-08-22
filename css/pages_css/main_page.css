@@ -105,6 +105,12 @@
 .navigation li:hover a{
     color: #eb0602;
 }
+/*кнопки Новости + Вакансии при наведении*/
+/*.separate_navigation_btns:hover{*/
+    /*cursor: pointer;*/
+/*}*/
+/*todo рассмотреть эти кнопки*/
+
 /*спойлерный блок*/
 #navigation_spoilers{
     width: 100%;
@@ -183,13 +189,13 @@
     color: #eb0602;
 }
 
-
+/*секция с слайдшоу и ссылками*/
 .header_bottom_section{
     position: absolute;
     top: 100px;
     width: 100%;
 }
-
+/*слайдшоу*/
 #img_slider{
     display: flex;
     flex-direction: column;
@@ -199,7 +205,7 @@
     background-image: url("../../imgs/1sliderpic.png");
     transition: 1s;
 }
-
+/*основной заголовок поверх слайдшоу*/
 .main_text_h1{
     font-family: "Open Sans";
     font-size: 45px;
@@ -207,12 +213,12 @@
     font-weight: 500;
     margin: 135px 0 0 0;
 }
-
+/*кнопки поверх слайдшоу*/
 .slider_btns ul{
     display: flex;
     justify-content: center;
 }
-
+/*ссылки кнопок слайдшоу*/
 .slider_btns ul li a{
     display: flex;
     justify-content: center;
@@ -227,12 +233,115 @@
     margin: 80px 50px 190px 50px;
     transition: .3s;
 }
+/*ссылки кнопок слайдшоу при наведении*/
 .slider_btns ul li a:hover{
     color: #fff;
     background: #eb0602;
 }
+#content{
+    position: absolute;
+    top: 674px;
+    width: 100%;
+}
+.create_way_section{
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-items: center;
+    min-height: 360px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
+}
+.create_way_text{
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 40px 0 0 0;
+    color: #070640;
+}
+
+.start_station_list{
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.search_first_station{
+    margin: 40px 0 0 0;
+}
+.search_first_station input{
+    width: 460px;
+    height: 8px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-family: Rubik;
+    font-weight: 300;
+    color: #000;
+    padding: 20px;
+    border: 0;
+    background: #e4e4e4;
+}
+input:focus{
+    outline: none;
+    background: #f0f0f0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.shown_stations{
+    display: none;
+    height: auto;
+    display: none;
+    max-height: 170px;
+    overflow-y: scroll;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
 
 
+.station_add{
+    width: 500px;
+    height: 48px;
+    /*border-radius: 24px;*/
+    font-size: 16px;
+    font-family: Rubik;
+    font-weight: 300;
+    color: #000;
+    /*padding: 20px;*/
+    /*border: 0;*/
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.station_add a{
+    margin: 0 0 0 20px;
+}
+
+.green_line_station::before{
+    content: '\2022';
+    display: inline-flex;
+    color: #29ae47;
+    transform: scale(3);
+    margin: 0 10px 0 0;
+}
+.red_line_station::before{
+    content: '\2022';
+    display: inline-flex;
+    color: #eb0602;
+    transform: scale(3);
+    margin: 0 10px 0 0;
+}
+.blue_line_station::before{
+    content: '\2022';
+    display: inline-flex;
+    color: #0061b4;
+    transform: scale(3);
+    margin: 0 10px 0 0;
+}
 
 
 
