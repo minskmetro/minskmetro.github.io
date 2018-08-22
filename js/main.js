@@ -1,129 +1,50 @@
-var information = document.getElementById('information_li');
-information.addEventListener('mouseover', spoilerOne);
+if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1
+    var dpt = window.devicePixelRatio;
+    var widthM = window.screen.width * dpt;
+    var widthH = window.screen.height * dpt;
+    document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">');
+};
 
-function spoilerOne() {
-    var firstSpoiler = document.getElementById('information_spoiler_st');
-
-    information.addEventListener('mouseout', function () {
-            firstSpoiler.style.visibility = 'hidden';
-            firstSpoiler.style.display = 'none';
-            information.style.borderBottomColor = '#fff';
-    });
-
-    firstSpoiler.style.visibility = 'visible';
-    firstSpoiler.style.display = 'flex';
-    information.style.borderBottomColor = '#eb0602';
-
-    firstSpoiler.addEventListener('mouseover', function () {
-        firstSpoiler.style.visibility = 'visible';
-        firstSpoiler.style.display = 'flex';
-        information.style.borderBottomColor = '#eb0602';
-
-    });
-
-    firstSpoiler.addEventListener('mouseout', function () {
-        firstSpoiler.style.visibility = 'hidden';
-        firstSpoiler.style.display = 'none';
-        information.style.borderBottomColor = '#fff';
-    })
-}
 
 //————————————————————
 
-var lineScheme = document.getElementById('line_scheme_li');
-lineScheme.addEventListener('mouseover', spoilerTwo);
 
-function spoilerTwo() {
-    var secondSpoiler = document.getElementById('information_spoiler_nd');
+var showSpoiler = document.getElementsByClassName('show_spoiler');
+console.log(showSpoiler);
+
+for (var i = 0; i < showSpoiler.length; i++) {
+    showSpoiler[i].onmouseover = function(j){
+        return function() {
+            var spoiler = document.getElementsByClassName('information_spoiler_all_css')[j];
+            console.log(spoiler);
 
 
-    lineScheme.addEventListener('mouseout', function () {
-        secondSpoiler.style.visibility = 'hidden';
-        secondSpoiler.style.display = 'none';
-        lineScheme.style.borderBottomColor = '#fff';
-    });
+            showSpoiler[j].addEventListener('mouseout', function () {
+                spoiler.style.visibility = 'hidden';
+                spoiler.style.display = 'none';
+                showSpoiler[j].style.borderBottomColor = '#fff';
+            });
 
-    secondSpoiler.style.visibility = 'visible';
-    secondSpoiler.style.display = 'flex';
-    lineScheme.style.borderBottomColor = '#eb0602';
+            spoiler.style.visibility = 'visible';
+            spoiler.style.display = 'flex';
+            showSpoiler[j].style.borderBottomColor = '#eb0602';
 
-    secondSpoiler.addEventListener('mouseover', function () {
-        secondSpoiler.style.visibility = 'visible';
-        secondSpoiler.style.display = 'flex';
-        lineScheme.style.borderBottomColor = '#eb0602';
+            spoiler.addEventListener('mouseover', function () {
+                spoiler.style.visibility = 'visible';
+                spoiler.style.display = 'flex';
+                showSpoiler[j].style.borderBottomColor = '#eb0602';
+            });
 
-    });
-
-    secondSpoiler.addEventListener('mouseout', function () {
-        secondSpoiler.style.visibility = 'hidden';
-        secondSpoiler.style.display = 'none';
-        lineScheme.style.borderBottomColor = '#fff';
-    })
+            spoiler.addEventListener('mouseout', function () {
+                spoiler.style.visibility = 'hidden';
+                spoiler.style.display = 'none';
+                showSpoiler[j].style.borderBottomColor = '#fff';
+            })
+        }
+    }(i);
 }
 
 //————————————————————
-
-var citizensAppeals = document.getElementById('citizens_appeals');
-citizensAppeals.addEventListener('mouseover', spoilerThree);
-
-function spoilerThree() {
-    var thirdSpoiler = document.getElementById('information_spoiler_rd');
-
-    citizensAppeals.addEventListener('mouseout', function () {
-        thirdSpoiler.style.visibility = 'hidden';
-        thirdSpoiler.style.display = 'none';
-        citizensAppeals.style.borderBottomColor = '#fff';
-    });
-
-    thirdSpoiler.style.visibility = 'visible';
-    thirdSpoiler.style.display = 'flex';
-    citizensAppeals.style.borderBottomColor = '#eb0602';
-
-    thirdSpoiler.addEventListener('mouseover', function () {
-        thirdSpoiler.style.visibility = 'visible';
-        thirdSpoiler.style.display = 'flex';
-        citizensAppeals.style.borderBottomColor = '#eb0602';
-
-    });
-
-    thirdSpoiler.addEventListener('mouseout', function () {
-        thirdSpoiler.style.visibility = 'hidden';
-        thirdSpoiler.style.display = 'none';
-        citizensAppeals.style.borderBottomColor = '#fff';
-    })
-}
-
-//————————————————————
-
-var services = document.getElementById('services');
-services.addEventListener('mouseover', spoilerFour);
-
-function spoilerFour() {
-    var fourthSpoiler = document.getElementById('information_spoiler_th');
-
-    services.addEventListener('mouseout', function () {
-        fourthSpoiler.style.visibility = 'hidden';
-        fourthSpoiler.style.display = 'none';
-        services.style.borderBottomColor = '#fff';
-    });
-
-    fourthSpoiler.style.visibility = 'visible';
-    fourthSpoiler.style.display = 'flex';
-    services.style.borderBottomColor = '#eb0602';
-
-    fourthSpoiler.addEventListener('mouseover', function () {
-        fourthSpoiler.style.visibility = 'visible';
-        fourthSpoiler.style.display = 'flex';
-        services.style.borderBottomColor = '#eb0602';
-
-    });
-
-    fourthSpoiler.addEventListener('mouseout', function () {
-        fourthSpoiler.style.visibility = 'hidden';
-        fourthSpoiler.style.display = 'none';
-        services.style.borderBottomColor = '#fff';
-    })
-}
 
 var frame = 1;
 function test () {
@@ -135,9 +56,10 @@ function test () {
     }
     else{
         frame = 0;
+        backgroundSlider.style.backgroundImage = 'url(imgs/1sliderpic.png)';
     }
 }
-setInterval(test, 3000)
+setInterval(test, 10000)
 
 
 
