@@ -10,14 +10,11 @@ if (window.devicePixelRatio !== 1) { // Костыль для определен
 
 
 var showSpoiler = document.getElementsByClassName('show_spoiler');
-console.log(showSpoiler);
 
 for (var i = 0; i < showSpoiler.length; i++) {
     showSpoiler[i].onmouseover = function(j){
         return function() {
             var spoiler = document.getElementsByClassName('information_spoiler_all_css')[j];
-            console.log(spoiler);
-
 
             showSpoiler[j].addEventListener('mouseout', function () {
                 spoiler.style.visibility = 'hidden';
