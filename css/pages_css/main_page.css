@@ -6,9 +6,9 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);
     z-index: 50;
 }
-/*сам хидер на 1020px*/
+/*сам хидер на 1000px*/
 .header_top{
-    width: 1020px;
+    width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@
 }
 /*спойлерная секция*/
 .navigation_spoilers_section{
-    width: 1020px;
+    width: 1000px;
     display: flex;
 }
 /*общий css для спойлеров*/
@@ -133,7 +133,7 @@
 #information_spoiler_st{
     /*visibility: hidden;*/
     /*position: relative;*/
-    left: 426px;
+    left: 406px;
     width: 220px;
     height: auto;
     /*background: #fff;*/
@@ -142,7 +142,7 @@
 #information_spoiler_nd{
     /*visibility: hidden;*/
     /*position: relative;*/
-    left: 529px;
+    left: 509px;
     width: 220px;
     /*height: auto;*/
     /*background: #fff;*/
@@ -151,7 +151,7 @@
 #information_spoiler_rd{
     /*visibility: hidden;*/
     /*position: relative;*/
-    left: 634px;
+    left: 614px;
     width: 220px;
     /*height: 200px;*/
     /*background: #fff;*/
@@ -160,7 +160,7 @@
 #information_spoiler_th{
     /*visibility: hidden;*/
     /*position: relative;*/
-    left: 780px;
+    left: 760px;
     width: 220px;
     /*height: 200px;*/
     /*background: #fff;*/
@@ -194,7 +194,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 1020px;
+    width: 1000px;
     margin: 0 auto;
     background-image: url("../../imgs/1sliderpic.png");
     transition: 1s;
