@@ -99,17 +99,39 @@ var firstSearch = document.getElementsByClassName('search')[0];
 var shownStations = document.getElementsByClassName('shown_stations')[0];
 
 
+var stationName = document.getElementsByClassName('name');
+for (var o = 0; o < stationName.length; o++) {
+    stationName[o].onclick = function (k) {
+        return function () {
+            document.getElementsByClassName('search_first_station')[0].innerHTML =
+                '<input class="search" placeholder=" ' + stationName[k].innerHTML + ' "onfocusout="setTimeout(closeFirstSearch, 100);" onfocus="openFirstSearch()">';
 
-
+        }
+    }(o);
+}
 
 function choosenStation() {
 
-    document.getElementsByClassName('search_first_station')[0].innerHTML =
-        '<input class="search" placeholder=" ' + event.target.innerHTML + '" onfocusout="setTimeout(closeFirstSearch, 1);" onfocus="openFirstSearch()">';
+
+    var stationName = document.getElementsByClassName('name');
+    for (var o = 0; o < stationName.length; o++) {
+        stationName[o].onclick = function (k) {
+            return function () {
+                document.getElementsByClassName('search_first_station')[0].innerHTML =
+                    '<input class="search" placeholder=" ' + stationName[k].innerHTML + ' "onfocusout="setTimeout(closeFirstSearch, 100);" onfocus="openFirstSearch()">';
+
+            }
+        }(o);
+    }
+
+    // document.getElementsByClassName('search_first_station')[0].innerHTML =
+    //     '<input class="search" placeholder=" ' + stationName[k].innerHTML + ' "onfocusout="setTimeout(closeFirstSearch, 100);" onfocus="openFirstSearch()">';
 
     shownStations.style.display = 'none';
 
     console.log(1);
+
+
 };
 
 function openFirstSearch() {
