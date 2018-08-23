@@ -96,24 +96,37 @@ $('body').click(function (event) {
 });
 
 var firstSearch = document.getElementsByClassName('search')[0];
+var shownStations = document.getElementsByClassName('shown_stations')[0];
 
-firstSearch.onfocus = function () {
-    var shownStations = document.getElementsByClassName('shown_stations')[0];
 
-    shownStations.style.display = 'block';
-};
 
-function closeFirstSearch () {
-    var shownStations = document.getElementsByClassName('shown_stations')[0];
 
-    shownStations.style.display = 'none';
-};
 
 function choosenStation() {
-    firstSearch.innerHTML = '1';
-    console.log(1);
-}
 
+    document.getElementsByClassName('search_first_station')[0].innerHTML =
+        '<input class="search" placeholder=" ' + event.target.innerHTML + '" onfocusout="setTimeout(closeFirstSearch, 1);" onfocus="openFirstSearch()">';
+
+    shownStations.style.display = 'none';
+
+    console.log(1);
+};
+
+function openFirstSearch() {
+
+
+
+    shownStations.style.display = 'block';
+    console.log('onfocus');
+};
+
+function closeFirstSearch() {
+
+    // document.getElementsByClassName('search_first_station')[0].innerHTML =
+    //     '<input class="search" placeholder=" ' + event.target.innerHTML + ' " onfocusout="setTimeout(closeFirstSearch, 1)" onfocus="openFirstSearch()">';
+    shownStations.style.display = 'none';
+    console.log('onfocusout');
+};
 
 
 
