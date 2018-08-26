@@ -97,6 +97,10 @@ input.onkeydown = function (e) {
         keysArr.push(e.key);
 
     }
+    else if (e.keyCode == 27){
+        console.warn(0);
+        keysArr = [];
+    }
     else if (e.keyCode == 8){
 
         keysArr.pop();
@@ -226,11 +230,16 @@ input2.onkeydown = function (e) {
         keysArr2.push(e.key);
 
     }
+    else if (e.keyCode == 27){
+        console.warn(0);
+        keysArr2 = [];
+    }
     else if (e.keyCode == 8){
 
         keysArr2.pop();
 
     }
+
     else{
         console.error('СРАБОТАЛ ОТЛАДЧИК ! ! ! СООБЩИТЕ, ПРИ КАКОМ УСЛОВИИ ЭТО ПРОИЗОШЛО');
     }
