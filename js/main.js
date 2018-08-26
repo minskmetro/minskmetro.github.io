@@ -330,13 +330,13 @@ function createWay() {
     // console.log(firstName);
     // console.log(secondName);
 
-    if (firstName == 'Введите станцию' && secondName == 'Введите станцию'){
+    if (firstName == 'Введите станцию отправления' && secondName == 'Введите станцию прибытия'){
         alert('Станции не были введены !');
     }
-    else if (firstName == 'Введите станцию') {
+    else if (firstName == 'Введите станцию отправления') {
         alert('Первая станция не была введена !');
     }
-    else if (secondName == 'Введите станцию') {
+    else if (secondName == 'Введите станцию прибытия') {
         alert('Вторая станция не была введена !');
     }
     else{
