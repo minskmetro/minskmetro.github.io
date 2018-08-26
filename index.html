@@ -519,42 +519,47 @@
 
                 <button id="createway" onclick="createWay()">Создать маршрут</button>
 
-            </div>
-
-            <div class="console">
-
-                <div class="startStSection">
-
-                    <span class="start_st_info">Начальная станция</span>
-
-                    <span class="start_st">0</span>
-
-                </div>
-
-                <div class="transferStSection">
-
-                    <span class="transfer_st_info">Следуйте к станциям пересадок</span>
-
-                    <span class="transfer_st_one">0</span>
-
-                    <span class="transfer_st_slash">/</span>
-
-                    <span class="transfer_st_two">0</span>
-                </div>
-
-                <div class="endStSection">
-
-                    <span class="end_st_info">Далее следуйте к станции</span>
-
-                    <span class="end_st">0</span>
-
-                </div>
-
-                <button onclick="closeWayBox()" class="closeWayBoxBtn">закрыть окно с маршрутами</button>
+                <h1 class="interactive_map_info">Вы также можете воспользоваться</h1>
+                <a href="#" class="open_interactive_map">Интерактивной схемой метро</a>
 
             </div>
 
-            <div class="interactive_map_section"></div>
+            <div id="console_section">
+                <div class="console">
+
+                    <div class="startStSection">
+
+                        <span class="start_st_info">Начальная станция:</span>
+
+                        <span class="start_st">0</span>
+
+                    </div>
+
+                    <div class="transferStSection">
+
+                        <span class="transfer_st_info">Следуйте к станциям пересадок:</span>
+
+                        <span class="transfer_st_one">0</span>
+
+                        <span class="transfer_st_slash">/</span>
+
+                        <span class="transfer_st_two">0</span>
+                    </div>
+
+                    <div class="endStSection">
+
+                        <span class="end_st_info">Далее следуйте к станции:</span>
+
+                        <span class="end_st">0</span>
+
+                    </div>
+
+                    <button onclick="closeWayBox()" class="closeWayBoxBtn">Закрыть окно с маршрутом</button>
+
+                </div>
+            </div>
+
+            <div class="interactive_map_section">1</div>
             <div class="tips_section"></div>
             <div class="news_section"></div>
         </div>

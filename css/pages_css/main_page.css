@@ -4,7 +4,7 @@
     position: fixed;
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);
-    z-index: 50;
+    z-index: 60;
 }
 /*сам хидер на 1000px*/
 .header_top{
@@ -251,7 +251,7 @@
     /*justify-content: center;*/
     flex-direction: column;
     align-items: center;
-    min-height: 360px;
+    min-height: 400px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
 }
 .create_way_text{
@@ -430,7 +430,7 @@ input:focus{
     display: block;
     width: 10px;
     height: 10px;
-    background-color: green;
+    background-color: #29ae47;
     border-radius: 50%;
     margin: 0 10px 0 0;
 }
@@ -446,7 +446,7 @@ input:focus{
     display: block;
     width: 10px;
     height: 10px;
-    background-color: blue;
+    background-color: #0061b4;
     border-radius: 50%;
     margin: 0 10px 0 0;
 }
@@ -491,7 +491,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
 }
 #createway:hover{
     color: #fff;
@@ -499,27 +499,91 @@ a{
     border: 1px solid #fff;
     cursor: pointer;
 }
+.interactive_map_info{
+    position: absolute;
+    top: 267px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Rubik;
+    text-align: center;
+    margin: 30px 0 0 0;
+
+}
+.open_interactive_map{
+    position: absolute;
+    top: 306px;
+    border-bottom: 1px solid #000;
+    margin: 20px 0 40px 0;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 300;
+}
+.open_interactive_map:hover{
+    border-bottom: 1px solid #eb0602;
+    color: #eb0602;
+}
 
 .console{
     position: absolute;
-    top: 400px;
+    /*top: 400px;*/
+
     display: none;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+
     font-family: Rubik;
+
     font-weight: 300;
-    outline: 1px solid #000;
-    padding: 10px;
-    width: 700px;
+    /*outline: 1px solid #000;*/
+    /*padding: 40px 0;*/
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 180px;
+    background: #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
 }
+.startStSection{
+    margin: 40px 0 0 0;
+
+}
+.transferStSection{
+    margin: 20px 0 0 0;
+
+}
+.endStSection{
+    margin: 20px 0 0 0;
+
+}
+
 .closeWayBoxBtn{
-    margin: 10px 0;
+    margin: 20px 0 40px 0;
+    width: 240px;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #fff;
+    transition: .3s;
+    color: #fff;
+    background: #eb0602;
 }
+.closeWayBoxBtn:hover{
+    cursor: pointer;
+    border: 1px solid #eb0602;
+    color: #eb0602;
+    background: #fff;
+}
+
 button{
     font-family: Rubik;
     font-weight: 300;
 }
 
 
-
+#console_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 
 

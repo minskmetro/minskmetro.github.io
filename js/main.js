@@ -355,7 +355,7 @@ function createWay() {
                         // console.log('сработало');
                         // console.log('первая станция ' + stationName[i].id + ' вторая станция ' + stationName2[a].id);
 
-                        wayBox.style.display = 'block';
+                        wayBox.style.display = 'flex';
 
                         if (stationName[i].innerHTML == stationName2[a].innerHTML) {
                             console.warn('Вы выбрали одинаковые станции !)');
@@ -390,6 +390,9 @@ function createWay() {
 
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
+
+                            startSt.style.color = '#29ae47';
+                            endSt.style.color = '#29ae47';
                         }
                         else if (stationName[i].id == 'greenstation' && stationName2[a].id == 'redstation'){
                             console.warn('Станции находятся на разных линиях. ' + stationName[i].innerHTML + ' → ЮБИЛЕЙНАЯ ПЛОЩАДЬ / ФРУНЗЕНСКАЯ → ' + stationName2[a].innerHTML);
@@ -407,6 +410,12 @@ function createWay() {
 
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
+
+                            transferStOne.style.color = '#29ae47';
+                            transferStTwo.style.color = '#eb0602';
+
+                            startSt.style.color = '#29ae47';
+                            endSt.style.color = '#eb0602';
                         }
                         else if (stationName[i].id == 'greenstation' && stationName2[a].id == 'bluestation'){
                             console.warn('Станции находятся на разных линиях. ' + stationName[i].innerHTML + ' → ВОКЗАЛЬНАЯ / ПЛОЩАДЬ ЛЕНИНА → ' + stationName2[a].innerHTML);
@@ -424,6 +433,12 @@ function createWay() {
 
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
+
+                            transferStOne.style.color = '#29ae47';
+                            transferStTwo.style.color = '#0061b4';
+
+                            startSt.style.color = '#29ae47';
+                            endSt.style.color = '#0061b4';
                         }
 
                         else if (stationName[i].id == 'redstation' && stationName2[a].id == 'redstation'){
@@ -442,6 +457,9 @@ function createWay() {
 
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
+
+                            startSt.style.color = '#eb0602';
+                            endSt.style.color = '#eb0602';
                         }
                         else if (stationName[i].id == 'redstation' && stationName2[a].id == 'greenstation'){
                             console.warn('Станции находятся на разных линиях. ' + stationName[i].innerHTML + ' → ФРУНЗЕНСКАЯ / ЮБИЛЕЙНАЯ ПЛОЩАДЬ → ' + stationName2[a].innerHTML);
@@ -459,6 +477,12 @@ function createWay() {
 
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
+
+                            transferStOne.style.color = '#eb0602';
+                            transferStTwo.style.color = '#29ae47';
+
+                            startSt.style.color = '#eb0602';
+                            endSt.style.color = '#29ae47';
                         }
                         else if (stationName[i].id == 'redstation' && stationName2[a].id == 'bluestation'){
                             console.warn('Станции находятся на разных линиях. ' + stationName[i].innerHTML + ' → КУПАЛОВСКАЯ / ОКТЯБРЬСКАЯ → ' + stationName2[a].innerHTML);
@@ -476,6 +500,12 @@ function createWay() {
 
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
+
+                            transferStOne.style.color = '#eb0602';
+                            transferStTwo.style.color = '#0061b4';
+
+                            startSt.style.color = '#eb0602';
+                            endSt.style.color = '#0061b4';
                         }
 
                         else if (stationName[i].id == 'bluestation' && stationName2[a].id == 'bluestation'){
@@ -494,6 +524,9 @@ function createWay() {
 
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
+
+                            startSt.style.color = '#0061b4';
+                            endSt.style.color = '#0061b4';
                         }
                         else if (stationName[i].id == 'bluestation' && stationName2[a].id == 'redstation'){
                             console.warn('Станции находятся на разных линиях. ' + stationName[i].innerHTML + ' → ОКТЯБРЬСКАЯ / КУПАЛОВСКАЯ → ' + stationName2[a].innerHTML);
@@ -511,6 +544,12 @@ function createWay() {
 
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
+
+                            transferStOne.style.color = '#0061b4';
+                            transferStTwo.style.color = '#eb0602';
+
+                            startSt.style.color = '#0061b4';
+                            endSt.style.color = '#eb0602';
                         }
                         else if (stationName[i].id == 'bluestation' && stationName2[a].id == 'greenstation'){
                             console.warn('Станции находятся на разных линиях. ' + stationName[i].innerHTML + ' → ПЛОЩАДЬ ЛЕНИНА / ВОКЗАЛЬНАЯ → ' + stationName2[a].innerHTML);
@@ -529,7 +568,12 @@ function createWay() {
                             endStInfo.innerHTML = 'Далее следуйте к станции: ';
                             endSt.innerHTML = stationName2[a].innerHTML;
 
-                            endSt.style.color = 'green';
+
+                            transferStOne.style.color = '#0061b4';
+                            transferStTwo.style.color = '#29ae47';
+
+                            startSt.style.color = '#0061b4';
+                            endSt.style.color = '#29ae47';
                         }
                     }
                 }
