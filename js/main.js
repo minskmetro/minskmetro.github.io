@@ -44,7 +44,7 @@ for (var i = 0; i < showSpoiler.length; i++) {
 //————————————————————
 
 var frame = 1;
-function test () {
+function testSlider () {
     var backgroundSlider = document.getElementById('img_slider');
     if (frame <3) {
         frame++;
@@ -56,7 +56,7 @@ function test () {
         backgroundSlider.style.backgroundImage = 'url(imgs/1sliderpic.png)';
     }
 }
-setInterval(test, 10000);
+setInterval(testSlider, 10000);
 //————————————————————
 
 var input = document.getElementsByTagName('input')[0];
