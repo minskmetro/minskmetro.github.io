@@ -1,3 +1,23 @@
+#whats_new{
+    position: fixed;
+    z-index: 999;
+    font-family: "Open Sans";
+    font-weight: 300;
+    width: 300px;
+    left: 10px;
+    top: 110px;
+    padding: 10px;
+    border-radius: 2px;
+    background: #fff;
+    transition: .1s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);
+    font-size: 14px;
+}
+#whats_new:hover{
+    opacity: 0;
+}
+
+
 /*секция хидера на 100% ширины*/
 .header_top_section{
     width: 100%;
@@ -189,10 +209,20 @@
     color: #eb0602;
 }
 
-/*секция с слайдшоу и ссылками*/
-.header_bottom_section{
+
+
+/*секция контента*/
+#content{
     position: absolute;
     top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*секция с слайдшоу и ссылками*/
+.header_bottom_section{
+    /*position: absolute;*/
+    /*top: 100px;*/
     width: 100%;
 }
 /*слайдшоу*/
@@ -238,11 +268,12 @@
     color: #fff;
     background: #eb0602;
 }
-#content{
-    position: absolute;
-    top: 674px;
+/*объвитель секции создания маршрута*/
+#create_way_section{
     width: 100%;
 }
+
+/*секция создания маршрута*/
 .create_way_section{
     width: 1000px;
     margin: 0 auto;
@@ -254,6 +285,7 @@
     min-height: 400px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
 }
+/*заголовок создать маршрут*/
 .create_way_text{
     font-family: Rubik;
     font-weight: 300;
@@ -261,117 +293,7 @@
     margin: 40px 0 0 0;
     color: #070640;
 }
-
-/*.start_station_list{*/
-    /*font-family: Rubik;*/
-    /*font-weight: 300;*/
-    /*font-size: 16px;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-/*}*/
-/*.search_first_station{*/
-    /*margin: 40px 0 0 0;*/
-/*}*/
-/*.search_first_station input{*/
-    /*width: 460px;*/
-    /*height: 8px;*/
-    /*border-radius: 24px;*/
-    /*font-size: 16px;*/
-    /*font-family: Rubik;*/
-    /*font-weight: 300;*/
-    /*color: #000;*/
-    /*padding: 20px;*/
-    /*border: 0;*/
-    /*background: #e4e4e4;*/
-/*}*/
-/*input:focus{*/
-    /*outline: none;*/
-    /*background: #f0f0f0;*/
-    /*border-bottom-left-radius: 0;*/
-    /*border-bottom-right-radius: 0;*/
-/*}*/
-
-/*.shown_stations{*/
-    /*height: auto;*/
-    /*display: none;*/
-    /*max-height: 170px;*/
-    /*overflow-y: scroll;*/
-    /*border-bottom-left-radius: 24px;*/
-    /*border-bottom-right-radius: 24px;*/
-/*}*/
-
-/*!*.shown_stations::-webkit-scrollbar{*!*/
-    /*!*width: 0;*!*/
-/*!*}*!*/
-
-
-/*.station_add{*/
-    /*width: 500px;*/
-    /*height: 48px;*/
-    /*!*border-radius: 24px;*!*/
-    /*font-size: 16px;*/
-    /*font-family: Rubik;*/
-    /*font-weight: 300;*/
-    /*color: #000;*/
-    /*!*padding: 20px;*!*/
-    /*!*border: 0;*!*/
-    /*background: #f0f0f0;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-/*}*/
-/*.station_add:last-child{*/
-    /*border-bottom-left-radius: 24px;*/
-    /*border-bottom-right-radius: 24px;*/
-/*}*/
-
-/*.station_add a{*/
-    /*padding: 0 0 0 20px;*/
-    /*width: 100%;*/
-    /*height: 48px;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-/*}*/
-
-/*.green_line_station::before{*/
-    /*content: '\2022';*/
-    /*display: inline-flex;*/
-    /*color: #29ae47;*/
-    /*transform: scale(3);*/
-    /*margin: 0 10px 0 0;*/
-/*}*/
-/*.red_line_station::before{*/
-    /*content: '\2022';*/
-    /*display: inline-flex;*/
-    /*color: #eb0602;*/
-    /*transform: scale(3);*/
-    /*margin: 0 10px 0 0;*/
-/*}*/
-/*.blue_line_station::before{*/
-    /*content: '\2022';*/
-    /*display: inline-flex;*/
-    /*color: #0061b4;*/
-    /*transform: scale(3);*/
-    /*margin: 0 10px 0 0;*/
-/*}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*свойства станций в списках*/
 .station,
 .station2{
     width: 100%;
@@ -386,17 +308,18 @@
     display: none;
 
 }
+/*свойства станций в списках при наведении*/
 .station:hover,
 .station2:hover{
     cursor: pointer;
 }
-
+/*секции со станциями и поиском*/
 .station_section,
 .station_section2{
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
 }
-
+/*поле ввода*/
 input{
     width: 500px;
     height: 8px;
@@ -409,13 +332,14 @@ input{
     border: 0;
     background: #e4e4e4;
 }
+/*поле ввода в фокусе*/
 input:focus{
     outline: none;
     background: #f0f0f0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-
+/*секции со станциями и поиском дополнительно*/
 .station_section,
 .station_section2{
     height: fit-content;
@@ -423,9 +347,8 @@ input:focus{
     overflow-y: scroll;
     overflow-x: hidden;
     width: 500px;
-    /*box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);*/
 }
-
+/*зеленая отметка станции*/
 .greencircle{
     display: block;
     width: 10px;
@@ -434,6 +357,7 @@ input:focus{
     border-radius: 50%;
     margin: 0 10px 0 0;
 }
+/*красная отметка станции*/
 .redcircle{
     display: block;
     width: 10px;
@@ -442,6 +366,7 @@ input:focus{
     border-radius: 50%;
     margin: 0 10px 0 0;
 }
+/*синяя отметка станции*/
 .bluecircle{
     display: block;
     width: 10px;
@@ -450,36 +375,34 @@ input:focus{
     border-radius: 50%;
     margin: 0 10px 0 0;
 }
-
-
+/*ссылки*/
 a{
     text-decoration: none;
     color: #000;
 }
+/*названия станций*/
 .name,
 .name2{
     -webkit-user-select: none;
 }
-
+/*первая графа поиска*/
 .first_station_check{
-    position: absolute;
-    top: 100px;
+    /*position: absolute;*/
+    /*top: 100px;*/
+    margin: 40px 0 0 0;
     z-index: 50;
 }
-
-
+/*вторая графа поиска*/
 .second_station_check{
-    position: absolute;
-    top: 168px;
-    display: block;
+    /*position: absolute;*/
+    /*top: 168px;*/
+    /*display: block;*/
     z-index: 30;
+    margin: 20px 0 0 0;
 }
-
+/*кнопка создать маршрут*/
 #createway{
-    position: absolute;
-    top: 236px;
     z-index: 20;
-    /*margin: 10px 0;*/
     height: 48px;
     width: 240px;
     border: 1px solid #eb0602;
@@ -491,41 +414,51 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 20px 0;
+    margin: 40px 0 0 0;
     outline: 0;
 }
+/*кнопка создать маршрут при наведении*/
 #createway:hover{
     color: #fff;
     background: #eb0602;
     border: 1px solid #fff;
     cursor: pointer;
 }
+/*текст вы также можете...*/
 .interactive_map_info{
-    position: absolute;
-    top: 267px;
+    /*position: absolute;*/
+    /*top: 267px;*/
     font-size: 20px;
     font-weight: 300;
     font-family: Rubik;
     text-align: center;
-    margin: 30px 0 0 0;
+    margin: 40px 0 0 0;
 
 }
+/*ссылка открывающая карту*/
 .open_interactive_map{
-    position: absolute;
-    top: 306px;
+    /*position: absolute;*/
+    /*top: 306px;*/
     border-bottom: 1px solid #000;
-    margin: 20px 0 40px 0;
+    margin: 10px 0 40px 0;
     font-family: Rubik;
     font-size: 20px;
     font-weight: 300;
 }
+/*ссылка открывающая карту при наведении*/
 .open_interactive_map:hover{
     border-bottom: 1px solid #eb0602;
     color: #eb0602;
 }
-
+/*секция вывода маршрута объявлена*/
+#console_section{
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+/*секция вывода маршрута*/
 .console{
-    position: absolute;
+    /*position: absolute;*/
     /*top: 400px;*/
 
     display: none;
@@ -540,25 +473,25 @@ a{
     /*padding: 40px 0;*/
     width: 1000px;
     margin: 0 auto;
-    min-height: 180px;
+    /*min-height: 180px;*/
     background: #fff;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
 }
+/*первая станция*/
 .startStSection{
     margin: 40px 0 0 0;
-
 }
+/*станция пересадок*/
 .transferStSection{
     margin: 20px 0 0 0;
-
 }
+/*конечная станция*/
 .endStSection{
     margin: 20px 0 0 0;
-
 }
-
+/*кнопка с закрытием вывода маршрута*/
 .closeWayBoxBtn{
-    margin: 20px 0 40px 0;
+    margin: 40px 0;
     width: 240px;
     height: 48px;
     border-radius: 24px;
@@ -567,24 +500,21 @@ a{
     color: #fff;
     background: #eb0602;
 }
+/*кнопка с закрытием вывода маршрута при наведении*/
 .closeWayBoxBtn:hover{
     cursor: pointer;
     border: 1px solid #eb0602;
     color: #eb0602;
     background: #fff;
 }
-
+/*просто кнопка*/
 button{
     font-family: Rubik;
     font-weight: 300;
 }
 
 
-#console_section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+
 
 
 
