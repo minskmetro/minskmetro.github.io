@@ -320,6 +320,7 @@ var transferStTwo = document.getElementsByClassName('transfer_st_two')[0];
 
 var endSt = document.getElementsByClassName('end_st')[0];
 var wayBox = document.getElementsByClassName('console')[0];
+var wayBoxSection = document.getElementById('console_section');
 
 var startStInfo = document.getElementsByClassName('start_st_info')[0];
 
@@ -364,7 +365,12 @@ function createWay() {
                         // console.log('сработало');
                         // console.log('первая станция ' + stationName[i].id + ' вторая станция ' + stationName2[a].id);
 
-                        wayBox.style.display = 'flex';
+                        wayBoxSection.style.height = '265px';
+                        wayBox.style.opacity = '1';
+
+                        // wayBox.style.display = 'flex';
+                        wayBox.style.height ='265px';
+                        wayBox.style.visibility = 'visible';
 
                         if (stationName[i].innerHTML == stationName2[a].innerHTML) {
                             console.warn('Вы выбрали одинаковые станции !)');
@@ -594,11 +600,29 @@ function createWay() {
 
 
 function closeWayBox() {
-    wayBox.style.display = 'none';
+    // wayBox.style.display = 'none';
+    wayBoxSection.style.height = '0';
+
+    // wayBox.style.display = 'flex';
+    wayBox.style.visibility = 'hidden';
+    wayBox.style.opacity = '0';
+    wayBox.style.height ='0';
 }
 
+function openCloseMap() {
+    var map = document.getElementsByClassName('interactive_map')[0];
 
-
+    if (map.style.height != '760px'){
+        map.style.visibility = 'visible';
+        map.style.opacity = '1';
+        map.style.height = '760px';
+    }
+    else{
+        map.style.visibility ='hidden';
+        map.style.opacity = '0';
+        map.style.height = '0';
+    }
+}
 
 
 

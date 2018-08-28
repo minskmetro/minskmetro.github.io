@@ -16,11 +16,13 @@
     <div id="whats_new">
         <h1>Что нового?</h1>
 
-        <p style="color: #29ae47">Небольшие твики интерфейса, изменения в коде</p>
+        <p style="color: #29ae47">Начата работа над интерактивной схемой, изменения в коде</p>
 
         <!--<p style="color: #eb0602;">Баг: при открытии поля поиска высота родительского блока увеличивается</p>-->
 
-        <p>27.8.18</p>
+        <p>28.8.18</p>
+
+        <p style="color: #0061b4">Для корректной работы сайта перезагружайте страницу сочетанием клавиш ctrl + F5</p>
     </div>
 
     <div id="preloader"></div>
@@ -133,7 +135,6 @@
         </div>
         
         <div id="content">
-
             <div class="header_bottom_section">
 
                 <div id="img_slider">
@@ -151,7 +152,6 @@
                 </div>
 
             </div>
-
             <div id="create_way_section">
 
                 <div class="create_way_section">
@@ -534,13 +534,13 @@
                     <button id="createway" onclick="createWay()">Создать маршрут</button>
 
                     <h1 class="interactive_map_info">Вы также можете воспользоваться</h1>
-                    <a href="#" class="open_interactive_map">Интерактивной схемой метро</a>
+                    <a href="javascript:;" class="open_interactive_map" onclick="openCloseMap()">Интерактивной схемой метро</a>
 
                 </div>
 
             </div>
-
             <div id="console_section">
+
                 <div class="console">
 
                     <div class="startStSection">
@@ -575,7 +575,49 @@
                 </div>
             </div>
 
-            <div class="interactive_map_section">1</div>
+
+            <div class="interactive_map_section">
+
+                <div class="interactive_map">
+
+                    <div class="map_imgs">
+
+                        <img class="blue_line_img" src="imgs/blue_line.png" alt="blue line">
+                        <img src="imgs/red_line.png" alt="" class="red_line_img">
+                        <img src="imgs/green_line.png" alt="" class="green_line_img">
+
+                        <img src="imgs/blue_line_number.png" alt="blue number" class="blue_line_number_img">
+
+
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_1">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_2">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_3">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_4">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_5">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_6">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_7">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_8">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_9">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_10">
+                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_11">
+
+                        <img src="imgs/blue_station_last.png" alt="last station" class="blue_line_station_last_1">
+                        <img src="imgs/blue_station_last.png" alt="last station" class="blue_line_station_last_2">
+
+
+                        <img src="imgs/blue_red_interchange.png" alt="blue red interchange" class="interchange_station_img_1">
+                        <img src="imgs/blue_green_interchange.png" alt="blue green interchange" class="interchange_station_img_2">
+                        <img src="imgs/red_green_interchange.png" alt="red green interchange" class="interchange_station_img_3">
+
+                    </div>
+                    
+                    <div class="map_texts"></div>
+
+                </div>
+
+            </div>
+
+
             <div class="tips_section"></div>
             <div class="news_section"></div>
         </div>
