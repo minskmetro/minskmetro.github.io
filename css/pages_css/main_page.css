@@ -529,9 +529,10 @@ button{
     width: 1000px;
     margin: 0 auto;
 
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
+    height: 760px;
+
+    opacity: 1;
+    /*visibility: hidden;*/
 
     background: #fff;
     transition: 1s all;
@@ -687,6 +688,68 @@ button{
     z-index: 50;
 }
 
+/*тексты станций синей линии*/
+.station_text{
+    font-size: 11px;
+    font-family: "Open Sans";
+    position: absolute;
+    user-select: none;
+    /*transition: 1s;*/
+    z-index: 60;
+}
+.station_text_blue_line:hover{
+    color: #0061b4;
+    text-decoration: underline;
+}
+.blue_station_text1{
+    transform: translateY(626px) translateX(106px);
+}
+.blue_station_text2{
+    transform: translateY(595px) translateX(156px);
+}
+.blue_station_text3{
+    transform: translateY(626px) translateX(206px);
+}
+.blue_station_text4{
+    transform: translateY(554px) translateX(246px);
+}
+.blue_station_text5{
+    transform: translateY(505px) translateX(247px);
+}
+.blue_station_text6{
+    transform: translateY(315px) translateX(575px);
+}
+.blue_station_text7{
+    transform: translateY(265px) translateX(625px);
+}
+.blue_station_text8{
+    transform: translateY(215px) translateX(673px);
+}
+.blue_station_text9{
+    transform: translateY(166px) translateX(725px);
+}
+.blue_station_text10{
+    transform: translateY(93px) translateX(810px);
+}
+.blue_station_text11{
+    transform: translateY(125px) translateX(860px);
+}
+.blue_station_text12{
+    transform: translateY(94px) translateX(910px);
+}
+.blue_station_text13{
+    transform: translateY(125px) translateX(961px);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .red_line_img{
@@ -696,6 +759,82 @@ button{
     position: absolute;
     z-index: 20;
 }
+.red_line_station_img_all_css{
+    position: absolute;
+    z-index: 20;
+    user-select: none;
+    width: 6px;
+}
+.red_line_station_img1{
+    transform: translateX(157px) translateY(116px);
+}
+.red_line_station_img2{
+    transform: translateX(207px) translateY(110px);
+}
+.red_line_station_img3{
+    transform: translateX(300px) translateY(149px) rotate(45deg);
+}
+.red_line_station_img4{
+    transform: translateX(350px) translateY(198px) rotate(45deg);
+}
+.red_line_station_img5{
+    transform: translateX(460px) translateY(308px) rotate(45deg);
+}
+.red_line_station_img6{
+    transform: translateX(570px) translateY(418px) rotate(45deg);
+}
+.red_line_station_img7{
+    transform: translateX(617px) translateY(465px) rotate(45deg);
+}
+.red_line_station_img8{
+    transform: translateX(667px) translateY(515px) rotate(45deg);
+}
+.red_line_station_img9{
+    transform: translateX(717px) translateY(565px) rotate(45deg);
+}
+.red_line_station_img10{
+    transform: translateX(811px) translateY(619px);
+}
+
+.red_line_station_last_1{
+    width: 6px;
+    position: absolute;
+    transform: translateY(109px) translateX(107px);
+}
+.red_line_station_last_2{
+    width: 6px;
+    position: absolute;
+    transform: translateY(611px) translateX(861px);
+}
+
+
+.station_text_red_line:hover{
+    color: #eb0602;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .green_line_img{
     width: 106px;
@@ -715,7 +854,9 @@ button{
 
 
 
-
+.interchange_station_text1{
+    transform: translateX(528px) translateY(360px);
+}
 
 
 
