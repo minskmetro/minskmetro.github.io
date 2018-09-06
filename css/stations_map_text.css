@@ -1,0 +1,143 @@
+.station_text{
+    font-size: 11px;
+    font-family: "Open Sans";
+    position: absolute;
+    user-select: none;
+    /*transition: 1s;*/
+    z-index: 60;
+}
+
+/*тексты станций синей линии*/
+.station_text_blue_line:hover{
+    color: #0061b4;
+    text-decoration: underline;
+}
+.blue_station_text1{
+    transform: translateY(626px) translateX(106px);
+}
+.blue_station_text2{
+    transform: translateY(595px) translateX(156px);
+}
+.blue_station_text3{
+    transform: translateY(626px) translateX(206px);
+}
+.blue_station_text4{
+    transform: translateY(554px) translateX(246px);
+}
+.blue_station_text5{
+    transform: translateY(505px) translateX(247px);
+}
+.blue_station_text6{
+    transform: translateY(315px) translateX(575px);
+}
+.blue_station_text7{
+    transform: translateY(265px) translateX(625px);
+}
+.blue_station_text8{
+    transform: translateY(215px) translateX(673px);
+}
+.blue_station_text9{
+    transform: translateY(166px) translateX(725px);
+}
+.blue_station_text10{
+    transform: translateY(93px) translateX(810px);
+}
+.blue_station_text11{
+    transform: translateY(125px) translateX(860px);
+}
+.blue_station_text12{
+    transform: translateY(94px) translateX(910px);
+}
+.blue_station_text13{
+    transform: translateY(125px) translateX(961px);
+}
+/*———————————————————————————————————————*/
+
+/*тексты станций красной линии*/
+.station_text_red_line:hover{
+    color: #eb0602;
+    text-decoration: underline;
+}
+.red_station_text1{
+    transform: translateX(106px) translateY(93px);
+}
+.red_station_text2{
+    transform: translateX(156px) translateY(125px);
+}
+.red_station_text3{
+    transform: translateX(206px) translateY(94px);
+}
+.red_station_text4{
+    transform: translateX(307px) translateY(137px);
+}
+.red_station_text5{
+    transform: translateX(357px) translateY(186px);
+}
+.red_station_text6{
+    transform: translateX(468px) translateY(296px);
+}
+.red_station_text7{
+    transform: translateX(577px) translateY(406px);
+}
+.red_station_text8{
+    transform: translateX(624px) translateY(453px);
+}
+.red_station_text9{
+    transform: translateX(673px) translateY(503px);
+}
+.red_station_text10{
+    transform: translateX(724px) translateY(553px);
+}
+.red_station_text11{
+    transform: translateX(811px) translateY(628px);
+}
+.red_station_text12{
+    transform: translateX(860px) translateY(595px);
+}
+
+
+/*———————————————————————————————————————*/
+
+/*тексты станций зеленой линии*/
+.station_text_green_line:hover{
+    color: #29ae47;
+    text-decoration: underline;
+}
+.green_station_text1{
+    transform: translateX(169px) translateY(359px);
+}
+.green_station_text2{
+    transform: translateX(474px) translateY(551px);
+}
+.green_station_text3{
+    transform: translateX(474px) translateY(611px);
+}
+
+/*текст станций пересадок*/
+.interchange_station_text1{
+    transform: translateX(528px) translateY(360px);
+}
+.interchange_station_text2{
+    transform: translateX(236px) translateY(460px);
+}
+.interchange_station_text3{
+    transform: translateX(200px) translateY(260px);
+;
+}
+/*———————————————————————————————————————*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

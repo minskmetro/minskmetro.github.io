@@ -626,6 +626,53 @@ function openCloseMap() {
 
 
 
+// точки меняющие типс
+var tipChangeBtn = document.getElementsByClassName('tip_btn');
+document.getElementsByClassName('tip_btn')[0].style.background = '#eb0602';
+
+for (var i = 0; i < tipChangeBtn.length; i++) {
+    tipChangeBtn[i].onclick = function(j){
+        return function() {
+
+            var tipIcon = document.getElementsByClassName('tip_icon')[0];
+            var tipMainText = document.getElementsByClassName('tip_main_text')[0];
+            var tipText = document.getElementsByClassName('tip_text')[0];
+            
+            if (j == 0){
+                tipIcon.src = 'imgs/credit_card.png';
+                tipMainText.innerHTML = 'Оплата проезда в метро';
+                tipText.innerHTML = 'Оплата в метро осуществляется при помощи жетонов и пластиковых карт';
+
+                document.getElementsByClassName('tip_btn')[0].style.background = '#eb0602';
+                document.getElementsByClassName('tip_btn')[1].style.background = '#bbb';
+                document.getElementsByClassName('tip_btn')[2].style.background = '#bbb';
+
+            }
+            else if(j == 1){
+                tipIcon.src = 'imgs/logo.png';
+                tipMainText.innerHTML = 'Последовательность входа / выхода';
+                tipText.innerHTML = 'Пассажиры сначала покидают вагон, а после заходят в него';
+
+                document.getElementsByClassName('tip_btn')[0].style.background = '#bbb';
+                document.getElementsByClassName('tip_btn')[1].style.background = '#eb0602';
+                document.getElementsByClassName('tip_btn')[2].style.background = '#bbb';
+
+            }
+            else if(j == 2){
+                tipIcon.src = 'imgs/credit_card.png';
+                tipMainText.innerHTML = 'Тут тоже какойто текст';
+                tipText.innerHTML = 'foo';
+
+                document.getElementsByClassName('tip_btn')[0].style.background = '#bbb';
+                document.getElementsByClassName('tip_btn')[1].style.background = '#bbb';
+                document.getElementsByClassName('tip_btn')[2].style.background = '#eb0602';
+            }
+
+
+        }
+    }(i);
+}
+
 
 
 

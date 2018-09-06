@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/pages_css/main_page.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto:300,400|Rubik:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/stations_map_imgs.css">
+    <link rel="stylesheet" href="css/stations_map_text.css">
 </head>
 <body>
 
@@ -16,13 +18,13 @@
     <div id="whats_new">
         <h1>Что нового?</h1>
 
-        <p style="color: #29ae47">Добавлены некоторые названия станций на схеме</p>
+        <p style="color: #29ae47">Внешний вид схемы принял почти идеальное состояние, добавлен новый блок</p>
 
         <!--<p style="color: #eb0602;">Баг: при открытии поля поиска высота родительского блока увеличивается</p>-->
 
-        <p>31.8.18</p>
+        <p>6.9.18</p>
 
-        <p style="color: #0061b4">Для корректной работы сайта перезагружайте страницу сочетанием клавиш ctrl + F5</p>
+        <p style="color: #0061b4">stay tuned / ctrl + F5</p>
     </div>
 
     <div id="preloader"></div>
@@ -582,48 +584,50 @@
 
                     <div class="map_imgs">
 
-                        <img class="blue_line_img" src="imgs/blue_line.png" alt="blue line">
-                        <img src="imgs/red_line.png" alt="" class="red_line_img">
-                        <img src="imgs/green_line.png" alt="" class="green_line_img">
+                        <img src="imgs/blue_line.png" alt="blue line" class="blue_line_img">
+                        <img src="imgs/red_line.png" alt="red line" class="red_line_img">
+                        <img src="imgs/green_line.png" alt="blue line" class="green_line_img">
+
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_1">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_2">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_3">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_4">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_5">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_6">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_7">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_8">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_9">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_10">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_11">
+                        <img src="imgs/blue_station_last.png" alt="blue station last" class="blue_line_station_last_1">
+                        <img src="imgs/blue_station_last.png" alt="blue station last" class="blue_line_station_last_2">
+
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img1 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img2 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img3 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img4 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img5 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img6 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img7 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img8 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img9 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img10 red_line_station_img_all_css">
+                        <img src="imgs/red_station_last.png" alt="red station last" class="red_line_station_last_1">
+                        <img src="imgs/red_station_last.png" alt="red station last" class="red_line_station_last_2">
+
+                        <img src="imgs/green_station.png" alt="green station" class="green_line_station_img1 green_line_station_img_all_css">
+                        <img src="imgs/green_station.png" alt="green station" class="green_line_station_img2 green_line_station_img_all_css">
+                        <img src="imgs/green_station_last.png" alt="green station last" class="green_line_station_last_1">
+
+                        <img src="imgs/blue_red_interchange.png" alt="blue-red interchange" class="interchange_station_img_1">
+                        <img src="imgs/blue_green_interchange.png" alt="blue-green interchange" class="interchange_station_img_2">
+                        <img src="imgs/red_green_interchange.png" alt="red-green interchange" class="interchange_station_img_3">
 
                         <img src="imgs/blue_line_number.png" alt="blue number" class="blue_line_number_img">
+                        <img src="imgs/red_line_number.png" alt="red number" class="red_line_number_img">
+                        <img src="imgs/green_line_number.png" alt="green number" class="green_line_number_img">
 
 
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_1">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_2">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_3">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_4">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_5">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_6">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_7">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_8">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_9">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_10">
-                        <img src="imgs/blue_station.png" alt="" class="blue_line_station_img_11">
-
-                        <img src="imgs/blue_station_last.png" alt="last station" class="blue_line_station_last_1">
-                        <img src="imgs/blue_station_last.png" alt="last station" class="blue_line_station_last_2">
-
-
-
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img1 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img2 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img3 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img4 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img5 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img6 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img7 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img8 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img9 red_line_station_img_all_css">
-                        <img src="imgs/red_station.png" alt="" class="red_line_station_img10 red_line_station_img_all_css">
-
-                        <img src="imgs/red_station_last.png" alt="" class="red_line_station_last_1">
-                        <img src="imgs/red_station_last.png" alt="" class="red_line_station_last_2">
-
-
-                        <img src="imgs/blue_red_interchange.png" alt="blue red interchange" class="interchange_station_img_1">
-                        <img src="imgs/blue_green_interchange.png" alt="blue green interchange" class="interchange_station_img_2">
-                        <img src="imgs/red_green_interchange.png" alt="red green interchange" class="interchange_station_img_3">
 
                     </div>
                     
@@ -633,7 +637,6 @@
                         <a href="#" class="station_text blue_station_text3 station_text_blue_line">Михалова</a>
                         <a href="#" class="station_text blue_station_text4 station_text_blue_line">Грушевка</a>
                         <a href="#" class="station_text blue_station_text5 station_text_blue_line">Институт культуры</a>
-
                         <a href="#" class="station_text blue_station_text6 station_text_blue_line">Площадь победы</a>
                         <a href="#" class="station_text blue_station_text7 station_text_blue_line">Площадь Якуба Колоса</a>
                         <a href="#" class="station_text blue_station_text8 station_text_blue_line">Академия наук</a>
@@ -643,13 +646,40 @@
                         <a href="#" class="station_text blue_station_text12 station_text_blue_line">Борисовский тракт</a>
                         <a href="#" class="station_text blue_station_text13 station_text_blue_line">Уручье</a>
 
+                        <a href="#" class="station_text red_station_text1 station_text_red_line">Каменная горка</a>
+                        <a href="#" class="station_text red_station_text2 station_text_red_line">Кунцевщина</a>
+                        <a href="#" class="station_text red_station_text3 station_text_red_line">Спортивная</a>
+                        <a href="#" class="station_text red_station_text4 station_text_red_line">Пушкинская</a>
+                        <a href="#" class="station_text red_station_text5 station_text_red_line">Молодежная</a>
+                        <a href="#" class="station_text red_station_text6 station_text_red_line">Немига</a>
+                        <a href="#" class="station_text red_station_text7 station_text_red_line">Первомайская</a>
+                        <a href="#" class="station_text red_station_text8 station_text_red_line">Пролетарская</a>
+                        <a href="#" class="station_text red_station_text9 station_text_red_line">Тракторный завод</a>
+                        <a href="#" class="station_text red_station_text10 station_text_red_line">Партизанская</a>
+                        <a href="#" class="station_text red_station_text11 station_text_red_line">Автозаводская</a>
+                        <a href="#" class="station_text red_station_text12 station_text_red_line">Могилевская</a>
+
+                        <a href="#" class="station_text green_station_text1 station_text_green_line">Площадь Франциска Богушевича</a>
+                        <a href="#" class="station_text green_station_text2 station_text_green_line">Ковальская слобода</a>
+                        <a href="#" class="station_text green_station_text3 station_text_green_line">Аэродромная</a>
+
 
                         <span class="interchange_station_text1 station_text">
-
                             <a href="#" class="station_text_blue_line">Октябрьская</a>
                             <span>/</span>
                             <a href="#" class="station_text_red_line">Купаловская</a>
+                        </span>
 
+                        <span class="interchange_station_text2 station_text">
+                            <a href="#" class="station_text_blue_line">Площадь Ленина</a>
+                            <span>/</span>
+                            <a href="#" class="station_text_green_line">Вокзальная</a>
+                        </span>
+
+                        <span class="interchange_station_text3 station_text">
+                            <a href="#" class="station_text_red_line">Фрунзенская</a>
+                            <span>/</span>
+                            <a href="#" class="station_text_green_line">Юбилейная площадь</a>
                         </span>
                     </div>
 
@@ -658,7 +688,27 @@
             </div>
 
 
-            <div class="tips_section"></div>
+            <div class="tips_section">
+
+                <div class="tip_slide">
+
+                    <img src="imgs/credit_card.png" alt="" class="tip_icon">
+                    <h1 class="tip_main_text">Оплата проезда в метро</h1>
+                    <p class="tip_text">Оплата в метро осуществляется при помощи жетонов и пластиковых карт</p>
+
+                    <div class="tips_btns">
+                        <a href="javascript:;" class="tip_btn"></a>
+                        <a href="javascript:;" class="tip_btn"></a>
+                        <a href="javascript:;" class="tip_btn"></a>
+                    </div>
+
+                </div>
+
+
+                </div>
+
+            </div>
+
             <div class="news_section"></div>
         </div>
 

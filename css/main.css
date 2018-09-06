@@ -5,7 +5,8 @@ body{
     outline: 0;
     font-family: sans-serif;
     background: #e3e3e3;
-    height: 3000px;
+    min-height: 3000px;
+    display: flex;
 }
 ul{
     list-style-type: none;

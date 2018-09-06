@@ -1,0 +1,254 @@
+/*стили картинок на схеме метро*/
+.map_imgs{
+    /*display: flex;*/
+}
+
+/*синяя ветвь станции*/
+.blue_line_img{
+    width: 854px;
+    transform: translateX(110px)translateY(114px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+
+.blue_line_number_img{
+    width: 10px;
+    transform: translateX(95px)translateY(613px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.red_line_number_img{
+    width: 10px;
+    transform: translateX(95px)translateY(113px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.green_line_number_img{
+    width: 10px;
+    transform: translateX(457px)translateY(630px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+
+.blue_line_station_img_1{
+    width: 6px;
+    transform: translateX(157px)translateY(612px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_2{
+    width: 6px;
+    transform: translateX(207px)translateY(617px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_3{
+    width: 6px;
+    transform: translateX(300px)translateY(567px) rotate(-45deg);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_4{
+    width: 6px;
+    transform: translateX(350px)translateY(517px) rotate(-45deg);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_5{
+    width: 6px;
+    transform: translateX(568px)translateY(310px) rotate(135deg);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_6{
+    width: 6px;
+    transform: translateX(618px)translateY(260px) rotate(135deg);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_7{
+    width: 6px;
+    transform: translateX(668px)translateY(210px) rotate(135deg);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_8{
+    width: 6px;
+    transform: translateX(718px)translateY(160px) rotate(135deg);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_9{
+    width: 6px;
+    transform: translateX(811px)translateY(110px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_10{
+    width: 6px;
+    transform: translateX(861px)translateY(116px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_img_11{
+    width: 6px;
+    transform: translateX(911px)translateY(110px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+
+.blue_line_station_last_1{
+    width: 6px;
+    transform: translateX(961px)translateY(108px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.blue_line_station_last_2{
+    width: 6px;
+    transform: translateX(107px)translateY(610px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+/*———————————————————————————————————————*/
+
+/*красная ветвь станции*/
+.red_line_station_img_all_css{
+    position: absolute;
+    z-index: 20;
+    user-select: none;
+    width: 6px;
+}
+.red_line_img{
+    width: 754px;
+    transform: translateX(110px)translateY(114px);
+    user-select: none;
+    position: absolute;
+    z-index: 20;
+}
+.red_line_station_img1{
+    transform: translateX(157px) translateY(116px);
+}
+.red_line_station_img2{
+    transform: translateX(207px) translateY(110px);
+}
+.red_line_station_img3{
+    transform: translateX(300px) translateY(149px) rotate(45deg);
+}
+.red_line_station_img4{
+    transform: translateX(350px) translateY(198px) rotate(45deg);
+}
+.red_line_station_img5{
+    transform: translateX(460px) translateY(308px) rotate(45deg);
+}
+.red_line_station_img6{
+    transform: translateX(570px) translateY(418px) rotate(45deg);
+}
+.red_line_station_img7{
+    transform: translateX(617px) translateY(465px) rotate(45deg);
+}
+.red_line_station_img8{
+    transform: translateX(667px) translateY(515px) rotate(45deg);
+}
+.red_line_station_img9{
+    transform: translateX(717px) translateY(565px) rotate(45deg);
+}
+.red_line_station_img10{
+    transform: translateX(811px) translateY(619px);
+}
+
+.red_line_station_last_1{
+    width: 6px;
+    position: absolute;
+    transform: translateY(109px) translateX(107px);
+}
+.red_line_station_last_2{
+    width: 6px;
+    position: absolute;
+    transform: translateY(611px) translateX(861px);
+}
+/*———————————————————————————————————————*/
+
+/*зеленая ветвь станции*/
+.green_line_station_img_all_css{
+    position: absolute;
+    z-index: 10;
+    user-select: none;
+    width: 6px;
+}
+.green_line_img{
+    width: 106px;
+    transform: translateX(359px)translateY(266px);
+    user-select: none;
+    position: absolute;
+    z-index: 10;
+}
+.green_line_station_img1{
+    transform: translateY(363px) translateX(355px) rotate(90deg);
+}
+.green_line_station_img2{
+    transform: translateY(555px) translateX(463px) rotate(90deg);
+}
+.green_line_station_last_1{
+    width: 6px;
+    position: absolute;
+    transform: translateY(612px) translateX(459px) rotate(90deg);
+}
+/*———————————————————————————————————————*/
+
+
+/*станции пересадок*/
+.interchange_station_img_1{
+    width: 14px;
+    transform: translateX(513px)translateY(354px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.interchange_station_img_2{
+    width: 14px;
+    transform: translateX(412px)translateY(454px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+.interchange_station_img_3{
+    width: 14px;
+    transform: translateX(397px)translateY(254px);
+    user-select: none;
+    position: absolute;
+    z-index: 50;
+}
+/*———————————————————————————————————————*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

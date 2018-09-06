@@ -24,7 +24,7 @@
     position: fixed;
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);
-    z-index: 60;
+    z-index: 100;
 }
 /*сам хидер на 1000px*/
 .header_top{
@@ -218,6 +218,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 /*секция с слайдшоу и ссылками*/
 .header_bottom_section{
@@ -529,13 +530,13 @@ button{
     width: 1000px;
     margin: 0 auto;
 
-    height: 760px;
+    height: 0;
 
-    opacity: 1;
-    /*visibility: hidden;*/
+    opacity: 0;
+    visibility: hidden;
 
     background: #fff;
-    transition: 1s all;
+    transition: 1s;
     box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);
 }
 .interactive_map::before{
@@ -547,270 +548,53 @@ button{
     right: calc(50% - 15px);
 }
 
+.tips_section{
+    width: 1000px;
+    background: #fbfbfb;
+    min-height: 300px;
 
-
-
-224
-
-
-/*картинки на карте*/
-.map_imgs{
-    /*display: flex;*/
-}
-.blue_line_img{
-    width: 854px;
-    transform: translateX(110px)translateY(114px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0,0 , 0.1);
 }
 
-.blue_line_number_img{
-    width: 10px;
-    transform: translateX(95px)translateY(613px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
+.tip_slide{
+    width: 100%;
+    min-height: 336px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
 }
-
-.blue_line_station_img_1{
-    width: 6px;
-    transform: translateX(157px)translateY(612px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
+.tip_icon{
+    margin: 55px 0 0 0;
+    width: 80px;
 }
-.blue_line_station_img_2{
-    width: 6px;
-    transform: translateX(207px)translateY(617px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_3{
-    width: 6px;
-    transform: translateX(300px)translateY(567px) rotate(-45deg);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_4{
-    width: 6px;
-    transform: translateX(350px)translateY(517px) rotate(-45deg);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_5{
-    width: 6px;
-    transform: translateX(568px)translateY(310px) rotate(135deg);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_6{
-    width: 6px;
-    transform: translateX(618px)translateY(260px) rotate(135deg);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_7{
-    width: 6px;
-    transform: translateX(668px)translateY(210px) rotate(135deg);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_8{
-    width: 6px;
-    transform: translateX(718px)translateY(160px) rotate(135deg);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_9{
-    width: 6px;
-    transform: translateX(811px)translateY(110px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_10{
-    width: 6px;
-    transform: translateX(861px)translateY(116px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_img_11{
-    width: 6px;
-    transform: translateX(911px)translateY(110px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-
-.blue_line_station_last_1{
-    width: 6px;
-    transform: translateX(961px)translateY(108px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.blue_line_station_last_2{
-    width: 6px;
-    transform: translateX(107px)translateY(610px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-
-.interchange_station_img_1{
-    width: 14px;
-    transform: translateX(513px)translateY(354px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.interchange_station_img_2{
-    width: 14px;
-    transform: translateX(412px)translateY(454px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-.interchange_station_img_3{
-    width: 14px;
-    transform: translateX(397px)translateY(254px);
-    user-select: none;
-    position: absolute;
-    z-index: 50;
-}
-
-/*тексты станций синей линии*/
-.station_text{
-    font-size: 11px;
-    font-family: "Open Sans";
-    position: absolute;
-    user-select: none;
-    /*transition: 1s;*/
-    z-index: 60;
-}
-.station_text_blue_line:hover{
-    color: #0061b4;
-    text-decoration: underline;
-}
-.blue_station_text1{
-    transform: translateY(626px) translateX(106px);
-}
-.blue_station_text2{
-    transform: translateY(595px) translateX(156px);
-}
-.blue_station_text3{
-    transform: translateY(626px) translateX(206px);
-}
-.blue_station_text4{
-    transform: translateY(554px) translateX(246px);
-}
-.blue_station_text5{
-    transform: translateY(505px) translateX(247px);
-}
-.blue_station_text6{
-    transform: translateY(315px) translateX(575px);
-}
-.blue_station_text7{
-    transform: translateY(265px) translateX(625px);
-}
-.blue_station_text8{
-    transform: translateY(215px) translateX(673px);
-}
-.blue_station_text9{
-    transform: translateY(166px) translateX(725px);
-}
-.blue_station_text10{
-    transform: translateY(93px) translateX(810px);
-}
-.blue_station_text11{
-    transform: translateY(125px) translateX(860px);
-}
-.blue_station_text12{
-    transform: translateY(94px) translateX(910px);
-}
-.blue_station_text13{
-    transform: translateY(125px) translateX(961px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.red_line_img{
-    width: 754px;
-    transform: translateX(110px)translateY(114px);
-    user-select: none;
-    position: absolute;
-    z-index: 20;
-}
-.red_line_station_img_all_css{
-    position: absolute;
-    z-index: 20;
-    user-select: none;
-    width: 6px;
-}
-.red_line_station_img1{
-    transform: translateX(157px) translateY(116px);
-}
-.red_line_station_img2{
-    transform: translateX(207px) translateY(110px);
-}
-.red_line_station_img3{
-    transform: translateX(300px) translateY(149px) rotate(45deg);
-}
-.red_line_station_img4{
-    transform: translateX(350px) translateY(198px) rotate(45deg);
-}
-.red_line_station_img5{
-    transform: translateX(460px) translateY(308px) rotate(45deg);
-}
-.red_line_station_img6{
-    transform: translateX(570px) translateY(418px) rotate(45deg);
-}
-.red_line_station_img7{
-    transform: translateX(617px) translateY(465px) rotate(45deg);
-}
-.red_line_station_img8{
-    transform: translateX(667px) translateY(515px) rotate(45deg);
-}
-.red_line_station_img9{
-    transform: translateX(717px) translateY(565px) rotate(45deg);
-}
-.red_line_station_img10{
-    transform: translateX(811px) translateY(619px);
-}
-
-.red_line_station_last_1{
-    width: 6px;
-    position: absolute;
-    transform: translateY(109px) translateX(107px);
-}
-.red_line_station_last_2{
-    width: 6px;
-    position: absolute;
-    transform: translateY(611px) translateX(861px);
-}
-
-
-.station_text_red_line:hover{
+.tip_main_text{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+    /*text-align: center;*/
+    margin: 30px 0 0 0;
     color: #eb0602;
-    text-decoration: underline;
+}
+.tip_text{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 0 0 0;
+    display: flex;
+}
+.tips_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.tip_btn{
+    display: flex;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #bbb;
+    margin: 55px 11px;
 }
 
 
@@ -828,35 +612,6 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-.green_line_img{
-    width: 106px;
-    transform: translateX(359px)translateY(266px);
-    user-select: none;
-    position: absolute;
-    z-index: 10;
-}
-
-
-
-
-
-
-
-
-
-
-
-.interchange_station_text1{
-    transform: translateX(528px) translateY(360px);
-}
 
 
 
